@@ -24,6 +24,7 @@ pub mod vectors;
 pub mod enums;
 pub mod iterators;
 pub mod option_result;
+pub mod collection_ds;
 
 /// Run all lessons in order
 pub fn run_all_lessons() {
@@ -55,6 +56,7 @@ pub fn run_all_lessons() {
     option_result::learn_option_type();
     option_result::learn_error_handling_with_result();
     iterators::learn_iterators_and_functional_combinators();
+    collection_ds::learn_collections_and_data_structures();
 
     println!("\n╔════════════════════════════════════════════════════════════╗");
     println!("║         ✅ All Lessons Completed Successfully! ✅          ║");
