@@ -16,6 +16,19 @@
 /// - Creating and modifying a hash map
 /// - Iterating over collections
 /// ============================================================================
+/// Mental Note
+/// | Collection   | Mutable? | Fixed Size? | Heap/Stack | Use Case           |
+/// |--------------|----------|-------------|------------|--------------------|
+/// | `[T; N]`     | Optional | Yes         | Stack      | small, fixed data  |
+/// | `Vec<T>`     | Yes      | No          | Heap       | growable arrays    |
+/// | `&[T]`       | Optional | No          | Borrow     | partial view       |
+/// | `String`     | Yes      | No          | Heap       | mutable text       |
+/// | `&str`       | No       | No          | Borrow     | immutable view     |
+/// | `HashMap<K,V>` | Yes    | No          | Heap       | key-value store    |
+/// | `HashSet<T>` | Yes      | No          | Heap       | unique items       |
+/// | `VecDeque<T>`| Yes      | No          | Heap       | queue operations   |
+/// | `(T1, T2)`   | Optional | Yes         | Stack      | multi-value returns|
+/// 
 /// 
 use std::collections::HashMap;
 use std::collections::HashSet;
