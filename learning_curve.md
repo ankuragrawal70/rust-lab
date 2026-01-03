@@ -57,6 +57,7 @@
 - [ ] Lifetime elision rules
 - [ ] Complex borrowing scenarios
 - [ ] How lifetimes interact with `Option`/`Result` & iterators
+- [] Smart pointers
 
 ---
 

@@ -25,6 +25,11 @@ pub mod enums;
 pub mod iterators;
 pub mod option_result;
 pub mod collection_ds;
+pub mod traits_impl;
+pub mod traits_advanced;
+pub mod ownership_deep_dive;
+pub mod smart_pointers_explained;
+pub mod interior_mutability_patterns;
 
 /// Run all lessons in order
 pub fn run_all_lessons() {
@@ -57,6 +62,15 @@ pub fn run_all_lessons() {
     option_result::learn_error_handling_with_result();
     iterators::learn_iterators_and_functional_combinators();
     collection_ds::learn_collections_and_data_structures();
+
+    // Phase 6: Traits & Abstraction
+    traits_impl::learn_traits_and_impl();
+    traits_advanced::learn_advanced_traits();
+
+    // Phase 7: Deep Dive - Memory Management
+    ownership_deep_dive::learn_ownership_deep_dive();
+    smart_pointers_explained::learn_smart_pointers_explained();
+    interior_mutability_patterns::learn_interior_mutability_patterns();
 
     println!("\n╔════════════════════════════════════════════════════════════╗");
     println!("║         ✅ All Lessons Completed Successfully! ✅          ║");
