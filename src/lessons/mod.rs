@@ -30,6 +30,9 @@ pub mod traits_advanced;
 pub mod ownership_deep_dive;
 pub mod smart_pointers_explained;
 pub mod interior_mutability_patterns;
+pub mod closures;
+pub mod error_handling;
+pub mod concurrency;
 
 /// Run all lessons in order
 pub fn run_all_lessons() {
@@ -71,6 +74,13 @@ pub fn run_all_lessons() {
     ownership_deep_dive::learn_ownership_deep_dive();
     smart_pointers_explained::learn_smart_pointers_explained();
     interior_mutability_patterns::learn_interior_mutability_patterns();
+
+    // Phase 8: Functional Programming & Advanced
+    closures::learn_closures();
+    error_handling::learn_error_handling();
+
+    // Phase 9: Concurrency
+    concurrency::learn_concurrency();
 
     println!("\n╔════════════════════════════════════════════════════════════╗");
     println!("║         ✅ All Lessons Completed Successfully! ✅          ║");
