@@ -33,6 +33,7 @@ pub mod interior_mutability_patterns;
 pub mod closures;
 pub mod error_handling;
 pub mod concurrency;
+pub mod macros;
 
 /// Run all lessons in order
 pub fn run_all_lessons() {
@@ -81,6 +82,9 @@ pub fn run_all_lessons() {
 
     // Phase 9: Concurrency
     concurrency::learn_concurrency();
+
+    // Phase 10: Macros & Metaprogramming
+    macros::learn_macros();
 
     println!("\n╔════════════════════════════════════════════════════════════╗");
     println!("║         ✅ All Lessons Completed Successfully! ✅          ║");
