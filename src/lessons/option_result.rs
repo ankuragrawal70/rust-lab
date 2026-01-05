@@ -82,7 +82,7 @@ fn option_combinator_examples() {
     println!("no_value.map(|x| x * 2) = {:?}", doubled_none);
 
     // Chaining with .map()
-    let result = Some(10)
+    let result: Option<String> = Some(10)
         .map(|x| x * 2)      // Some(20)
         .map(|x| x + 5)      // Some(25)
         .map(|x| x.to_string()); // Some("25")
